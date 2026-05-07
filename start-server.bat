@@ -1,0 +1,9 @@
+@echo off
+echo Starting Expense Tracker Backend Server...
+echo.
+echo Killing any existing Node.js processes...
+taskkill /f /im node.exe >nul 2>&1
+echo.
+echo Starting server on port 3001...
+node server.js
+pause
